@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>condition practice</title>
+</head>
+<body>
+  <script>
+    // let age = 45;
+    // let gender = "male";
+    // let finalDiscount;
+
+    // if(age <= 5){
+    //   finalDiscount = "kids free";
+    // }
+    // else if(gender === "female"){
+    //   finalDiscount = "female get 50% discount";
+    // }
+    // else if(age <= 8){
+    //   finalDiscount = "kids half ticket"
+    // }else if(age >= 65){
+    //   finalDiscount = "Only 30% pay";
+    // }else{
+    //   finalDiscount = "0% discount"
+    // }
+
+    // console.log(`Your discount is: ${finalDiscount}`)
+
+    // let number = 2;
+    function checkNumber(number){
+      if(number % 2 == 0){
+        return "even number"
+      }else{
+        return "Odd number"
+      }
+    }
+    let result = checkNumber(6);
+    console.log(result);
+
+    // large 2 number
+    function largeNumber(num1, num2){
+      if(num1 > num2){
+        return `The largest number is: ${num1}`
+      }else{
+        return `The largest number is: ${num2}`
+      }
+    }
+
+    console.log(largeNumber(50, 10))
+
+    // convert celcius to f
+
+    function celsiusToF(cel){
+      return `F = ${9 / 5 * cel + 32}`
+    }
+    console.log(celsiusToF(100));
+  </script>
+</body>
+</html>

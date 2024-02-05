@@ -13,9 +13,11 @@ const goalQuotes = [
 ]
 
 const allGoals = JSON.parse(localStorage.getItem("allGoals")) || {}
+
 let completeGoalsCount = Object.values(allGoals).filter((goal)=> goal.completed).length
 progressValue.style.width = `${(completeGoalsCount / 3) * 100}%`;
 progressValue.firstElementChild.innerText = `${completeGoalsCount} / 3 completed`
+
 progressLabel.innerText = goalQuotes[completeGoalsCount]
 
 checkBoxList.forEach((checkBox)=>{
@@ -39,6 +41,7 @@ checkBoxList.forEach((checkBox)=>{
     }
   })
 })
+
 
 goalInput.forEach((input)=>{
 
