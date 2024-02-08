@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop-Wave</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <a href="./index.html"><img src="../img/logo.png" alt="img logo" /></a>
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="./index.html">Home</a></li>
+          <li><a class="active" href="./shop.html">Shop</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a href="./cart.html" class="cartIcon"><i class="fas fa-shopping-bag"></i></a>
+            <span class="cartCount">0</span> 
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- feature product section -->
+    <section class="feature_product">
+      <div class="products_container"></div>
+    </section>
+
+
+    <!-- new arrival section -->
+    <section class="feature_product">
+      <div class="products_container" id="new_arrival"></div>
+    </section>
+
+    <!-- pagination section -->
+    <section class="pagination section-p1">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="fa fa-long-arrow-alt-right"></i></a>
+    </section>
+
+<!-- news letter -->
+
+    <section class="news_letter">
+      <div class="newsText">
+        <h4>Sing Up for news letter</h4>
+        <p>
+          Get emails updates about latest shop and <span>special offer</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button>Sing Up</button>
+      </div>
+    </section>
+
+    <!-- footer section -->
+     
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../data/data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

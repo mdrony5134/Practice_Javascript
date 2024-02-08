@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop-Wave</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> -->
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <a href="/index.html"><img src="./img/logo.png" alt="img logo" /></a>
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a href="./cart.html" class="cartIcon"><i class="fas fa-shopping-bag"></i></a>
+            <span class="cartCount">0</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="proDetails section-p1">
+      <div class="single_pro_img">
+        <img src="./img/products/f1.jpg" class="main_img" width="100%" alt="img">
+        <div class="small_img_group">
+          <div class="small_img_col">
+            <img src="./img/products/f1.jpg" width="100%" class="small_img" alt="img1">
+          </div>  
+          <div class="small_img_col">  
+            <img src="./img/products/f2.jpg" width="100%" class="small_img"  alt="img2">
+          </div>  
+          <div class="small_img_col">  
+            <img src="./img/products/f3.jpg" width="100%" class="small_img"  alt="img3">
+          </div>  
+          <div class="small_img_col">  
+            <img src="./img/products/f4.jpg" width="100%" class="small_img"  alt="img4">
+          </div>
+        </div>
+      </div>
+
+      <div class="single_pro_details">
+        <h6>Home / T-Shirt</h6>
+        <h4>Men's Fashion T-Shirts</h4>
+        <h2>$139</h2>
+        <select>
+          <option>Select Size</option>
+          <option>Small</option>
+          <option>Large</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+        <input type="number" value="1">
+        <button>Add to cart</button>
+        <h4>Product Details</h4>
+        <span>Introducing our men's t-shirt, crafted for comfort and style. Made from premium 100% cotton, this classic crew neck design offers a relaxed fit for all-day wear. Available in a range of versatile colors, it's perfect for any occasion. Featuring a tagless design for added comfort and easy care instructions, this essential wardrobe staple is a must-have. Get yours today online or in-store at an unbeatable price.</span>
+      </div>
+    </section>
+     
+     
+
+    
+
+    <!-- news letter section -->
+    <section class="news_letter">
+      <div class="newsText">
+        <h4>Sing Up for news letter</h4>
+        <p>
+          Get emails updates about latest shop and <span>special offer</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button>Sing Up</button>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+
+   
+     
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> -->
+    <!-- <script src="data/data.js"></script> -->
+    <!-- <script src="index.js"></script> -->
+
+    <script>
+      let mainImage = document.querySelector(".main_img");
+      let smallImage = document.querySelectorAll(".small_img")
+
+     smallImage.forEach((smallImg, index) =>{
+       smallImg.addEventListener("click", ()=>{
+        mainImage.src = smallImage[index].src;
+       })
+     })
+
+      // smallImage[0].onclick = function(){
+      //   mainImage.src = smallImage[0].src;
+      // }
+      // smallImage[1].onclick = function(){
+      //   mainImage.src = smallImage[1].src;
+      // }
+      // smallImage[2].onclick = function(){
+      //   mainImage.src = smallImage[2].src;
+      // }
+      // smallImage[3].onclick = function(){
+      //   mainImage.src = smallImage[3].src;
+      // }
+      
+    </script>
+  </body>
+</html>
